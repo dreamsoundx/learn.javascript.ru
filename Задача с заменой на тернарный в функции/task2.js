@@ -4,7 +4,7 @@ function checkAge(age) {
 
 let check = checkAge(+prompt('Введите возраст'));
 if (check === false) {
-  alert('Досвидос');
+  alert('Всего хорошего');
 } else {
   alert('Добро пожаловать');
 }
