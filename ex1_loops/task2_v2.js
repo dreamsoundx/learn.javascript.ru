@@ -1,5 +1,5 @@
-function showPrimes(n) {
-  for (let i = 2; i < n; i++) {
+function showPrimes(number) {
+  for (let i = 2; i < number; i++) {
     if (!isPrime(i)) {
       continue;
     }
@@ -7,13 +7,13 @@ function showPrimes(n) {
   }
 }
 
-function isPrime(n) {
-  for (let i = 2; i < n; i++) {
-    if (n % i == 0) {
+function isPrime(number) {
+  for (let i = 2; i < number; i++) {
+    if (number % i == 0) {
       return false;
     }
   }
   return true;
 }
-let value = prompt('Введите число');
-showPrimes(value);
+let number = prompt('Введите число');
+showPrimes(number);
